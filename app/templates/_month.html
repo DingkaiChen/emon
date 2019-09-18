@@ -1,0 +1,27 @@
+	<span class='m_year'>{{ m_year }}</span>
+	<span class='m_month'>{{ m_month }}</span>
+	<div class='mdata-hours'>
+		{% for item in hpdatas[0] %}
+		<span class='m-hour'>{{ item }}</span>
+		{% endfor %}
+	</div>	
+	<div class='mdata-days'>
+		{% for item in hpdatas[1] %}
+		<span class='m-day'>{{ item }}</span>
+		{% endfor %}
+	</div>	
+	<table>
+		<tr>
+			<th>X</th>
+			<th>Y</th>
+			<th>值</th>
+		</tr>
+		{% for item in hpdatas[2] %}
+		<tr class='data-hp'>
+			<td class='xval'>{{ item[0] }}</td>
+			<td class='yval'>{{ item[1] }}</td>
+			<td class='val'>{{ item[2] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+

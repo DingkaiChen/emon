@@ -1,0 +1,42 @@
+	<span class='datatime'>{{ datatime }}</span>
+	<span class='floornumber'>{{ floornumber }}</span>
+	<span class='realval'>{{ realvalue }}</span>
+	<table>
+		<tr>
+			<th>日</th>
+			<th>今年</th>
+			<th>去年</th>
+		</tr>
+		{% for item in monthdatas %}
+		<tr class='data-mdts'>
+			<td class='dd'>{{ item[0] }}</td>
+			<td class='tval'>{{ item[1] }}</td>
+			<td class='lval'>{{ item[2] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<table>
+		<tr>
+			<th>楼层</th>
+			<th>值</th>
+		</tr>
+		{% for item in realfloors %}
+		<tr class='data-tdvs'>
+			<td class='flr'>{{ item[0] }}</td>
+			<td class='val'>{{ item[1] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<table>
+		<tr>
+			<th>name</th>
+			<th>val</th>
+		</tr>
+		{% for item in pievals %}
+		<tr class='data-pie'>
+			<td class='name'>{{ item[0] }}</td>
+			<td class='val'>{{ item[1] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+

@@ -1,0 +1,22 @@
+	<span class='yearstr'>{{ year }}</span>
+	<table>
+		<tr>
+			<th>年</th>
+			<th>月</th>
+			<th>日</th>
+			<th>日常用电值</th>
+			<th>中央空调用电值</th>
+			<th>总用电值</th>
+		</tr>
+		{% for item in yeardatas %}
+		<tr class='data-year'>
+			<td class='yyyy'>{{ item[0] }}</td>
+			<td class='mm'>{{ item[1] }}</td>
+			<td class='dd'>{{ item[2] }}</td>
+			<td class='val01'>{{ item[3] }}</td>
+			<td class='val03'>{{ item[4] }}</td>
+			<td class='valtotal'>{{ item[5] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+

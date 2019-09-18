@@ -1,0 +1,98 @@
+body{
+	padding-top: 50px;
+	background-color: #eee;
+}
+
+.navbar-default{
+	background-color:#0767c8;
+	border-bottom-color:#044e97;
+	background-image:-webkit-linear-gradient(top,#8ad7eb,#055db5);
+	min-height:40px;
+	height:40px;
+	margin-bottom:0;
+}
+
+.navbar-default .navbar-brand{
+	font-size:20px;
+	color:white;
+	margin-left:-10px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.navbar-default .navbar-right{
+	font-size:12px;
+	color:white;
+	padding-top:14px;
+	padding-bottom:14px;
+	margin-right:5px;
+}
+
+.row{
+	margin-left:0;
+	margin-right:0;
+}
+
+.row .col-md-6{
+	padding-left:0;
+	padding-right:0;
+}
+
+.panel{
+	margin-bottom:10px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+.form-inline{
+	margin-top:10px;
+	text-align:right;
+	margin-right:20px;
+}
+
+.body-footer .about {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    height: 160px;
+    background-color: #eeeeee;
+}
+
+    .body-footer .about .link {
+        max-width: 1100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+        .body-footer .about .link ul {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+            .body-footer .about .link ul li {
+                float: left;
+                list-style: none;
+                margin: 5px 10px 5px 10px;
+            }
+
+                .body-footer .about .link ul li a {
+                    font-size: 14px;
+                    color: #777777;
+                }
+
+                    .body-footer .about .link ul li a:hover {
+                        cursor: pointer;
+                        color: #0767c8;
+                    }
+
+.body-footer .copyright {
+    margin: 0;
+    padding: 10px 0 10px 0;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #0d64b8;
+}
+
+    .body-footer .copyright p {
+        vertical-align: middle;
+        color: #ffffff;
+    }

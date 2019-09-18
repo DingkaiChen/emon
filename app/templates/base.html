@@ -1,0 +1,55 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+	{{ title }}
+{% endblock %}
+
+{% block navbar %}
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<span class="navbar-brand">
+					{{ title }}
+				</span>
+			</div>
+			<div class="nav navbar-nav navbar-right">
+				数据时间：<span id='datatime'></span>
+			</div>
+		</div>
+	</nav>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+	{% block app_content %}{% endblock %}
+	</div>
+	<footer class="body-footer">
+		<div class="about">
+			<div class="link">
+				<h3>相关链接</h3>
+				<ul>
+					<li><a href="http://www.iue.cas.cn/">中国科学院城市环境研究所</a></li>
+                    			<li><a href="http://www.cas.cn/">中国科学院</a></li>
+                    			<li><a href="http://www.mee.gov.cn/">生态环境部</a></li>
+                    			<li><a href="http://www.most.gov.cn/">科学技术部</a></li>
+                    			<li><a href="http://www.weather.com.cn/">中国天气网</a></li>
+                    			<li><a href="http://www.cma.gov.cn/">中国气象网</a></li>
+                    			<li><a href="http://iue.rcdnue.org/energy.aspx">城市环境所园区环境质量监测网</a></li>
+					<li><a href="http://nbweb.rcdnue.org/">宁波城市环境观测网</a></li>
+					<li><a href="http://shangrila.rcdnue.org/">香格里拉数字生态旅游网</a></li>
+                    			<li><a href="http://ditan.rcdnue.org/">低碳城市网</a></li>
+					<li><a href="http://lca.rcdnue.org">化工产品生命周期能耗评价系统</a></li>
+                    			<li><a href="http://neimeng.rcdnue.org">大型能源基地环境保障决策支持平台</a></li>
+                    			<li><a href="http://pipemer.rcdnue.org/">公共机构能源资源管理绩效评价决策支持系统</a></li>
+                		</ul>
+            		</div>
+        	</div>
+		<div class="copyright">
+			<p>© 2019 - 中国科学院城市环境研究所 地址：厦门市集美大道1799号 邮编：361021</p>
+		</div>
+	</footer>
+{% endblock %}
+{% block head %}
+	{{ super() }}
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/mycss.css') }}"/>
+{% endblock %}
